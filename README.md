@@ -3,9 +3,8 @@ Run a Dockerized Mesos and Marathon environment on your own machine so that you 
 
 Versions:
 
-* Mesos 0.27
-* Marathon 0.15
-* Docker 1.9
+* Mesos 0.27.0
+* Marathon 0.15.1
 
 # Boot the infrastructure
 We assume that you have installed the Docker Toolbox.
