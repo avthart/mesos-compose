@@ -9,5 +9,11 @@ address = ":8080"
 
 [marathon]
 endpoint = "http://marathon:8080"
+# interface = "eth0"
 watch = true
 domain = "marathon.localhost"
+
+# [consul]
+# endpoint = "consul:8500"
+# watch = true
+# prefix = "traefik"
