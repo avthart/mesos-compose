@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  traefik:
+    image: emilevauge/traefik
+    ports:
+      - "10080:8080"
+      - "80:80"
+    volumes:
+      - ./traefik.toml:/traefik.toml

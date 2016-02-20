@@ -17,7 +17,16 @@ You can start mesos and marathon using Docker Compose:
 
 > docker-compose up -d
 
-# Interfaces
+User Interfaces:
 
 * Marathon http://DOCKER_MACHINE_IP:8080/
 * Mesos http://DOCKER_MACHINE_IP:5050/
+
+# Traefik HTTP router
+
+You can optionally run Traefik as a HTTP (Edge) router. See https://github.com/emilevauge/traefik
+
+> docker-compose -f traefik-compose.yml up -d
+
+User Interfaces:
+* Traefik Admin http://DOCKER_MACHINE_IP:10080/
