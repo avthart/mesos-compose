@@ -1,0 +1,13 @@
+# traefik.toml
+
+port = ":80"
+graceTimeOut = 10
+logLevel = "DEBUG"
+
+[web]
+address = ":8080"
+
+[marathon]
+endpoint = "http://marathon:8080"
+watch = true
+domain = "marathon.localhost"
