@@ -30,3 +30,12 @@ You can optionally run Traefik as a HTTP (Edge) router. See https://github.com/e
 
 User Interfaces:
 * Traefik Admin http://DOCKER_MACHINE_IP:10080/
+
+# Consul
+
+You can optionally run Consul for Service Discovery
+
+> docker-compose -f consul-compose.yml up -d
+
+User Interfaces:
+* Consul UI http://DOCKER_MACHINE_IP:8500/
