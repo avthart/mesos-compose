@@ -1,10 +1,11 @@
 # mesos-compose
-Run a Dockerized Mesos and Marathon environment on your own machine so that you can develop and test locally.
+Run a Dockerized Mesos and Marathon environment on your own machine so that you can develop and test locally. Weave Scope is installed for visualizing, monitoring and controlling your mesos/docker infrastructure (containers, processes, networks, etc.)
 
 Versions:
 
 * Mesos 0.27.0
 * Marathon 0.15.1
+* Weave Scope 0.13.1
 
 # Boot the infrastructure
 We assume that you have installed the Docker Toolbox.
@@ -21,6 +22,7 @@ User Interfaces:
 
 * Marathon http://DOCKER_MACHINE_IP:8080/
 * Mesos http://DOCKER_MACHINE_IP:5050/
+* Weave Scope http://DOCKER_MACHINE_IP:4040/
 
 # Traefik HTTP router
 

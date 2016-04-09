@@ -52,3 +52,16 @@ services:
       MARATHON_MASTER: 'zk://zookeeper:2181/mesos'
       MARATHON_EVENT_SUBSCRIBER: 'http_callback'
       MARATHON_TASK_LAUNCH_TIMEOUT: '300000'
+
+  weavescope:
+    image: weaveworks/scope:0.13.1
+    network_mode: "host"
+    pid: "host"
+    privileged: true
+    labels:
+      - "works.weave.role=system"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:rw"
+    command:
+      - "--probe.docker"
+      - "true"
