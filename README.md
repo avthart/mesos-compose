@@ -29,7 +29,7 @@ User Interfaces:
 
 # Traefik HTTP router
 
-You can optionally run Traefik as a HTTP (Edge) router. See [https://github.com/emilevauge/traefik]
+You can optionally run Traefik as a HTTP (Edge) router. See https://github.com/emilevauge/traefik
 
 ```
 docker-compose -f traefik-compose.yml up -d
